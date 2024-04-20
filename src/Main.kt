@@ -60,7 +60,54 @@ fun main() {
     println(models.contains("Demio"))
     println(models[3])
 
-
     //use mutableListOf in order to add more items to the list
+
+
+    //How to loop through list
+
+    for (model in models) {
+        println(model)
+    }
+    // functions
+    fun first() {
+
+        println("This is  a function called  first,and here is where we put our logic")
+
+    }
+    // Unit  corresponds  to void in java ,it's a retiurn ttoe with a null return value
+
+    fun greet(): Unit {
+
+        println("This is  a function called  greet,and it returns a null value")
+
+    }
+    //functions with parameters...paremeters reffer to the variables for example name,age...while arguments refer to the actual values
+    // for example jemutai,sato,34...
+
+    val names: String = "Sato Jemutai"
+    fun sayHi(names: String) {
+        println("Good morning ,$names")
+    }
+
+    // classes  and objects
+    //class is  a blueprint of an object
+
+
+    data class Engineers(
+        //properties.variables. val or var
+        var name: String = "",
+        var skills: String = "fff"
+    )
+    //behaviours...functions or methods
+
+    fun drive(){
+
+    }
+
+    val Justoo = Engineers()  // this is how to create an instance of a class
+
+    Justoo.name = ""
+    Justoo.skills = ""
+
 
 }
